@@ -33,6 +33,10 @@ const LANGUAGES = [
     code: 'he',
   },
   {
+    label: 'Hungarian',
+    code: 'hu',
+  },
+  {
     label: 'Indonesian',
     code: 'id',
   },
