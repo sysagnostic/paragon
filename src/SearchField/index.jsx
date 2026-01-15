@@ -178,7 +178,6 @@ SearchField.defaultProps = {
   variant: 'light',
   disabled: false,
   submitButtonLocation: 'internal',
-  buttonText: SEARCH_FIELD_BUTTON_TEXT,
 };
 
 SearchField.Advanced = SearchFieldAdvanced;

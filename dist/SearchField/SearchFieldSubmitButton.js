@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { SearchFieldContext } from './SearchFieldAdvanced';
+import { FormattedMessage } from 'react-intl';
 import Button from '../Button';
 import IconButton from '../IconButton';
 import Icon from '../Icon';
@@ -30,7 +31,11 @@ function SearchFieldSubmitButton(props) {
     className: "pgn__searchfield__button",
     disabled: disabled,
     ...others
-  }, buttonText, /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement(FormattedMessage, {
+    id: "pgn.SearchFieldSubmitButton.buttonText",
+    defaultMessage: "Search",
+    description: "Search field submit button text"
+  }), /*#__PURE__*/React.createElement("span", {
     className: "sr-only"
   }, screenReaderText.submitButton)) : /*#__PURE__*/React.createElement(IconButton, {
     className: "pgn__searchfield__iconbutton-submit",
@@ -57,8 +62,7 @@ SearchFieldSubmitButton.propTypes = {
 };
 SearchFieldSubmitButton.defaultProps = {
   variant: 'light',
-  submitButtonLocation: 'internal',
-  buttonText: 'Search'
+  submitButtonLocation: 'internal'
 };
 export default SearchFieldSubmitButton;
 //# sourceMappingURL=SearchFieldSubmitButton.js.map

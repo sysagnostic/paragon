@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
+import { FormattedMessage } from 'react-intl';
 import { SearchFieldContext } from './SearchFieldAdvanced';
 import Button from '../Button';
 import IconButton from '../IconButton';
@@ -37,7 +38,11 @@ function SearchFieldSubmitButton(props) {
       disabled={disabled}
       {...others}
     >
-      {buttonText}
+      <FormattedMessage
+        id="pgn.SearchFieldSubmitButton.buttonText"
+        defaultMessage="Search"
+        description="Search field submit button text"
+      />
       <span className="sr-only">{screenReaderText.submitButton}</span>
     </Button>
   ) : (
@@ -70,7 +75,6 @@ SearchFieldSubmitButton.propTypes = {
 SearchFieldSubmitButton.defaultProps = {
   variant: 'light',
   submitButtonLocation: 'internal',
-  buttonText: 'Search',
 };
 
 export default SearchFieldSubmitButton;

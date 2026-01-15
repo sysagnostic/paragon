@@ -156,8 +156,7 @@ SearchField.defaultProps = {
   inputProps: {},
   variant: 'light',
   disabled: false,
-  submitButtonLocation: 'internal',
-  buttonText: SEARCH_FIELD_BUTTON_TEXT
+  submitButtonLocation: 'internal'
 };
 SearchField.Advanced = SearchFieldAdvanced;
 SearchField.Label = SearchFieldLabel;

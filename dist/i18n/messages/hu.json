@@ -38,5 +38,6 @@
   "pgn.ProductTour.Checkpoint.page-index-text": "{lépés} a(z) {összesLépés} közül",
   "pgn.ProductTour.Checkpoint.top-position-text": "A lépés teteje {step}",
   "pgn.ProductTour.checkpointHeader.close": "",
+  "pgn.SearchFieldSubmitButton.buttonText": "Keresés",
   "pgn.Toast.closeLabel": "Bezár"
 }

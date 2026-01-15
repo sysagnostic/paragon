@@ -16,7 +16,7 @@ interface BreadcrumbProps {
     spacer?: React.ReactElement;
     /** allows to add a custom function to be called `onClick` of a breadcrumb link.
      * The use case for this is for adding custom analytics to the component. */
-    clickHandler?: (event: React.MouseEvent, link: any) => void;
+    clickHandler?: (event: React.MouseEvent<HTMLAnchorElement>, link: any) => void;
     /** The `Breadcrumbs` style variant to use. */
     variant?: 'light' | 'dark';
     /** The `Breadcrumbs` mobile variant view. */
@@ -25,6 +25,8 @@ interface BreadcrumbProps {
      * [react-router's Link](https://reactrouter.com/en/main/components/link).
      */
     linkAs?: React.ElementType;
+    /** Optional class name(s) to append to the base `<nav>` element. */
+    className?: string;
 }
-declare function Breadcrumb({ links, activeLabel, spacer, clickHandler, variant, isMobile, ariaLabel, linkAs, ...props }: BreadcrumbProps): import("react/jsx-runtime").JSX.Element;
+declare function Breadcrumb({ links, activeLabel, spacer, clickHandler, className, variant, isMobile, ariaLabel, linkAs, }: BreadcrumbProps): import("react/jsx-runtime").JSX.Element;
 export default Breadcrumb;

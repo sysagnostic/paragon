@@ -8,18 +8,17 @@ function Breadcrumb({
   activeLabel,
   spacer,
   clickHandler,
+  className,
   variant = 'light',
   isMobile = false,
   ariaLabel = 'breadcrumb',
-  linkAs = 'a',
-  ...props
+  linkAs = 'a'
 }) {
   const linkCount = links.length;
   const displayLinks = isMobile ? [links[linkCount - 1]] : links;
   return /*#__PURE__*/React.createElement("nav", {
     "aria-label": ariaLabel,
-    className: classNames('pgn__breadcrumb', `pgn__breadcrumb-${variant}`),
-    ...props
+    className: classNames('pgn__breadcrumb', `pgn__breadcrumb-${variant}`, className)
   }, /*#__PURE__*/React.createElement("ol", {
     className: classNames('list-inline', {
       'is-mobile': isMobile
