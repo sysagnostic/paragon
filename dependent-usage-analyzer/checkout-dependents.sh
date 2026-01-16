@@ -5,7 +5,7 @@ mkdir .projects
   git clone git@github.com:openedx/credential-themes.git --depth 1
   git clone git@github.com:openedx/credentials.git --depth 1
   git clone git@github.com:openedx/edx-enterprise.git --depth 1
-  git clone git@github.com:openedx/edx-ora2.git --depth 1
+  git clone git@github.com:sysagnostic/edx-ora2.git --depth 1
   git clone git@github.com:openedx/edx-platform.git --depth 1
   git clone git@github.com:openedx/frontend-app-account.git --depth 1
   git clone git@github.com:openedx/frontend-app-admin-portal.git --depth 1

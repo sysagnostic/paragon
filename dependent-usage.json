@@ -24,7 +24,7 @@
     {
       "version": "21.13.1",
       "name": "edx-ora2",
-      "repository": "https://github.com/openedx/edx-ora2.git",
+      "repository": "https://github.com/sysagnostic/edx-ora2.git",
       "folderName": "edx-ora2",
       "usages": {
         "Alert": [
